@@ -4,7 +4,7 @@ nmap --script smb-vuln* -p 445 192.168.1.101
 nmap -vvv -p 139,445,3389 --script=*-vuln-* 0.0.0.0 
 SMB login via Brute Force
 
-`hydra -L user.txt -P pass.txt 192.168.1.101 smb`
+`hydra` -L user.txt -P pass.txt 192.168.1.101 smb`
 
 gobuster dir -u http://www.targetwebsite.com/ -w /usr/share/wordlists/big.txt -x php,html,htm
 
